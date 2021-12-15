@@ -1,0 +1,96 @@
+.header-page_container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-page{
+   /* position: absolute;*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    background: rgba(11, 20, 25, 0.9);
+    padding: 9px 0;
+    overflow: hidden;
+}
+.header-page_end{
+    display: flex;
+    align-items: center;
+
+}
+.header-page_nav{
+margin-right: 15px;
+}
+.header-page_ul{
+    list-style: non;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+}
+.header-page_link{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 15px 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    position: relative;
+    transition: color 2s;
+}
+.header-page_link:hover{
+    color: #1f1f1f;
+}
+.header-page_link::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    height: calc(100% + 40px);
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all 2s;
+
+}
+.header-page_link:hover::before{
+    opacity: 1;
+}
+/*чтобы бефор не перекрывал текст*/
+.header-page_text{
+    position: relative;
+}
+.burger-menu{
+display: none;
+}
+  
+@media(max-width: 1200px){
+    .header-page_link{
+        font-size: 16px;
+        padding: 12px 30px;
+    }
+    .header-page_phone{
+        font-size: 14px;
+        padding: 7px 16px;
+    }
+}
+@media(max-width: 992px){
+    .header-page_nav{
+        display: none;
+    }
+
+    .burger-menu{
+        display: block;
+    }
+    .header-page{
+        padding: 5px 0;
+    }
+}
+@media(max-width: 526px){
+    .header-page_phone{
+        display: none;
+    }
+}

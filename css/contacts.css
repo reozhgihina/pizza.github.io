@@ -1,0 +1,311 @@
+header {
+    width: calc(100% - 2px);
+    height: 153px;
+    left: 0px;
+    top: 0px;
+    background-color: var(--bg-primary);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(216, 216, 216);
+}
+#headerContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0 15px;
+}
+#mobileMenu {
+    display: none;
+}
+#logo {
+    margin: 21px 0 15px;
+    display: flex;
+}
+header nav {
+    margin-top: 81px;
+    color: var(--text-primary);
+    transition: 0.3s ease-in-out;
+}
+nav ul {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: table;
+}
+nav ul li {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: var(--normal-gap);
+}
+.navButton {
+    color: var(--text-primary);
+    font-size: 1.3rem;
+    position: relative;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+/*nav ul li a::before*/
+.navButton::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--text-primary);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+@media (hover: hover) and (pointer: fine) {
+    /*nav ul li a:hover::before*/
+    .navButton:hover:before {
+        visibility: visible;
+        transform: scaleX(1);
+    }
+
+}
+#mobileMenu {
+    display: none;
+    border: none;
+}
+#mobileMenu img {
+    width: 1.5rem;
+}
+footer {
+    width: calc(100% - 2px);
+
+    background-color: var(--bg-primary);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+
+    border: 1px solid rgb(216, 216, 216);
+}
+#footerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+footer nav ul{
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+}
+footer h2 {
+    color: var(--text-primary);
+    font-family: 'Roboto', Helvetica,;
+}
+@media only screen and (min-width: 576px) {
+    #headerContainer {
+        max-width: 560px;
+    }
+    #footerContainer {
+        max-width: 560px;
+    }
+    header ul {
+        max-width: 560px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #headerContainer {
+        max-width: 720px;
+    }
+    #footerContainer {
+        max-width: 720px;
+    }
+    header ul {
+        max-width: 720px;
+    }
+    .caption {
+        width: 20%;
+    }
+    .map {
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    nav li {
+        padding: 0 !important;
+    }
+    #mobileMenu {
+        display: flex !important;
+        align-items: center;
+    }
+    header {
+        height: 100px;
+    }
+    header nav {
+        position: fixed;
+        top: 19px;
+        right: 0;
+        left: 0;
+        overflow: hidden;
+        height: 0;
+        z-index: 228;
+    }
+    header nav ul {
+        width: 100%;
+        margin: auto !important;
+        background-color: var(--bg-primary);
+        -webkit-box-orient: vertical !important;
+        -webkit-box-direction: normal !important;
+            -ms-flex-direction: column !important;
+                flex-direction: column !important;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+
+        display: block !important;
+    }
+    header nav li {
+        position: relative;
+        margin: 0 !important;
+        width: 100%;
+
+
+        display: inline-block !important;
+    }
+    .navButton {
+        display: block;
+
+        margin: auto;
+        width: 100%;
+
+        text-align: center;
+        line-height: 3.5rem;
+
+        padding: 0 !important;
+    }
+    .navButton:hover::before {
+        visibility: hidden !important;;
+    }
+    main aside {
+        width: 80%;
+    }
+    header nav li {
+        padding: 0 !important;
+    }
+    footer nav {
+        display: none !important;
+    }
+    #footerContainer {
+        justify-content: center !important;
+    }
+}
+@media only screen and (min-width: 992px) {
+    #headerContainer {
+        max-width: 960px;
+    }
+
+    #footerContainer {
+        max-width: 960px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #headerContainer {
+        max-width: 1140px;
+    }
+
+    #footerContainer {
+        max-width: 1140px;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+
+    #container {
+        max-width: 560px;
+    }
+}
+@media only screen and (min-width: 768px) {
+
+    #container {
+        max-width: 720px;
+    }
+
+    .caption {
+        max-width: 25%;
+    }
+
+    .map {
+        max-width: 65%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    #container {
+        max-width: 960px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    #container {
+        max-width: 1140px;
+    }
+}
+
+main {
+    padding: var(--normal-gap);
+    background-image: url('Images/background2.png');
+}
+
+main > h1 {
+    font-size: 3rem;
+    color: #000;
+    text-align: center;
+    margin-bottom: calc(3 * var(--normal-gap));
+}
+#container {
+    width: calc(100% - 30px);
+    position: relative;
+    padding: 0px 15px;
+    margin: 0px auto;
+}
+#row {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+
+    flex-direction: row;
+
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px -15px;
+
+    align-items: center;
+}
+.caption,
+.map {
+    width: 90%;
+    margin-bottom: var(--normal-gap);
+}
+.caption {
+    color: #731414;
+    font-family: 'Roboto', Helvetica;
+    margin: 0 var(--normal-gap) var(--normal-gap);
+}
+.map {
+    height: 500px;
+    background-color: var(--bg-primary);
+}
+.caption small {
+    font-size: 1rem;
+    color: var(--text-muted);
+}
+.caption h2 {
+    font-size: 2rem;
+    margin: calc(var(--normal-gap) / 2) 0;
+    font-weight: normal;
+}
+

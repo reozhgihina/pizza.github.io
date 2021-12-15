@@ -1,0 +1,36 @@
+
+.stat{
+    display: flex;
+        flex-wrap: wrap;
+}
+.stat__item{
+    width: calc(100% / 4);
+    padding: 70px 25px;
+    border-left: 3px solid #f7f7f7;
+    text-align: center;
+    color:#000;
+}
+.stat__item:last-child{
+    border-right: 3px solid #f7f7f7;
+   
+}
+.stat__count{
+    margin-bottom: 10px;
+font-size: 50px;
+font-weight: 700;
+line-height: 1;
+}
+.stat_text{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+@media(max-width:660px){
+    .stat__item{
+      width: 100%;
+      border-top:3px solid #f7f7f7
+
+    }
+    .stat__item:last-child{
+        border-right: 0;
+}
+}
