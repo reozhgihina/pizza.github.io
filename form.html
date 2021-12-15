@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:wght@300&display=swap" rel="stylesheet">
+   <link rel = "stylesheet" href = "css/normalize.css">
+   <link rel = "stylesheet" href = "css/components.css">
+   <link rel = "stylesheet" href = "css/main.css">
+   <link rel = "stylesheet" href = "css/header_page.css">
+   <link rel = "stylesheet" href = "css/footer-page.css">
+   <link rel = "stylesheet" href = "css/form.css">
+   <link rel = "stylesheet" href = "css/about.css">
+
+<title>Document</title>
+</head>
+<body>
+
+    <header class="header-page">
+        <div class="container header-page_container">
+      <div class="header_page_start">
+            <div class="logo">
+                <img class="logo_img" src="img/common/logo.png" alt="" width="220" height="100">
+            </div>
+        </div>
+        <div class="header-page_end">
+            <nav class="header-page_nav">
+                <ul class="header-page_ul">
+                    <li class="header-page_li">
+                        <a class="header-page_link" href="index.html"><span class = "header-page_text">Главная</span></a>
+                    </li>
+                    <li class="header-page_li">
+                        <a class="header-page_link" href="catalog.html"><span class = "header-page_text">Каталог</span></a>
+                    </li>
+                    <li class="header-page_li">
+                        <a class="header-page_link" href="about.html"><span class = "header-page_text">О нас</span></a>
+                    </li>
+                    <li class="header-page_li">
+                        <a class="header-page_link" href="#"><span class = "header-page_text">Контакты</span></a>
+                    </li>
+                    <li class="header-page_li">
+                      <a class="header-page_link" href="form.html"><span class = "header-page_text">Связь</span></a>
+                  </li>
+                </ul>
+            </nav>
+            <div class="phone">
+                <a class = "phone_item header-page_phone" href="tel:+375295478214"> +375(29)547-82-14</a>
+            </div>
+            <div class="burger-menu">
+                <input id="menu-toggle" type="checkbox" />
+                <label class="menu-btn" for="menu-toggle">
+                  <span></span>
+                </label>
+             
+                <ul class="menubox">
+                    <li><a class="menu-item" href="index.html">Главная</a></li>
+                        <li><a class="menu-item" href="catalog.html">Каталог</a></li>
+                        <li><a class="menu-item" href="about.html">О нас</a></li>
+                        <li><a class="menu-item" href="contact.html">Контакты</a></li>
+                        <li><a class="menu-item" href="form.html">обратная связь</a></li>
+                      </ul>
+              </div>
+        </div>
+        </div>
+        </header>
+        <section class="section_ab">
+          <div class="conteiner">
+          <div class="section_head-ab">
+              <h3 class="section_suptitle"> Обратная связь </h3>
+              <h2 class= "section_title-ab"> Мы беспокоимся о вас</h2>
+<div class="section_text">
+<p> Если вас что-то беспокоит, случились какие-то неполадки или у вас просто есть вопросы, отправьте нам сообщение и наши специалисты постараются
+  вам ответить в скором времи. Спасибо!
+</p>
+</div>     
+</section>   
+        <div class="container_form">
+          <form action="action_page.php">
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">Имя</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="Ваше имя..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="lname">Фамилия</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Ваша фамилия..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="country">Город</label>
+              </div>
+              <div class="col-75">
+                <select id="country" name="country">
+                  <option value="australia">Минск</option>
+                  <option value="canada">Могилев</option>
+                  <option value="usa">Гродно</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="subject">Сообщение</label>
+              </div>
+              <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Оставьте сообщение.." style="height:200px"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <input type="submit"  value="Отправить" disabled>
+            </div>
+          </form>
+        </div>
+
+ <!-- footer-page -->
+<footer class="footer-page">
+    <div class="container">
+        
+      <div class="footer-page__text">Oh là là 2021</div>
+    </div>
+  </footer>
+  <!-- /.footer-page -->
+  
+</body>
+</html>

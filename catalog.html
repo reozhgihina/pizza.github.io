@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:wght@300&display=swap" rel="stylesheet">
+   <link rel = "stylesheet" href = "css/normalize.css">
+   <link rel = "stylesheet" href = "css/components.css">
+   <link rel = "stylesheet" href = "css/main.css">
+   <link rel = "stylesheet" href = "css/header_page.css">
+   <link rel = "stylesheet" href = "css/section-top.css">
+   <link rel = "stylesheet" href = "css/footer-page.css">
+   <link rel = "stylesheet" href = "css/popup.css">
+
+<title>Document</title>
+</head>
+<body>
+
+    <header class="header-page">
+        <div class="container header-page_container">
+      <div class="header_page_start">
+            <div class="logo">
+                <img class="logo_img" src="img/common/logo.png" alt="" width="220" height="100">
+            </div>
+        </div>
+        <div class="header-page_end">
+            <nav class="header-page_nav">
+                <ul class="header-page_ul">
+                    <li class="header-page_li">
+                        <a class="header-page_link" href="index.html"><span class = "header-page_text">Главная</span></a>
+                    </li>
+                    <li class="header-page_li">
+                        <a class="header-page_link" href="catalog.html"><span class = "header-page_text">Каталог</span></a>
+                    </li>
+                    <li class="header-page_li">
+                        <a class="header-page_link" href="about.html"><span class = "header-page_text">О нас</span></a>
+                    </li>
+                    <li class="header-page_li">
+                        <a class="header-page_link" href="contact.html"><span class = "header-page_text">Контакты</span></a>
+                    </li>
+                    <li class="header-page_li">
+                      <a class="header-page_link" href="form.html"><span class = "header-page_text">Связь</span></a>
+                  </li>
+
+                </ul>
+            </nav>
+            <div class="phone">
+                <a class = "phone_item header-page_phone" href="tel:+375295478214"> +375(29)547-82-14</a>
+            </div>
+            <div class="burger-menu">
+                <input id="menu-toggle" type="checkbox" />
+                <label class="menu-btn" for="menu-toggle">
+                  <span></span>
+                </label>
+             
+                <ul class="menubox">
+                    <li><a class="menu-item" href="index.html">Главная</a></li>
+                        <li><a class="menu-item" href="catalog.html">Каталог</a></li>
+                        <li><a class="menu-item" href="about.html">О нас</a></li>
+                        <li><a class="menu-item" href="contact.html">Контакты</a></li>
+                        <li><a class="menu-item" href="form.html">обратная связь</a></li>
+
+                      </ul>
+              </div>
+        </div>
+        </div>
+        </header>
+        <!-- header-page-->
+        <section class="section section-catalog">
+            <div class="container">
+              <header class="section_header">
+                <h2 class="section_title section_title--accent">Меню</h2>
+                <nav class="catalog-nav">
+                  <ul class="catalog-nav_wrapper">
+                    <li class="catalog-nav_item">
+                      <button class="catalog-nav_btn is-active" type="button">все</button>
+                    </li>
+                    <li class="catalog-nav_item">
+                      <button class="catalog-nav_btn" type="button">грибные</button>
+                    </li>
+                    <li class="catalog-nav_item">
+                      <button class="catalog-nav_btn" type="button">мясные</button>
+                    </li>
+                    <li class="catalog-nav_item">
+                      <button class="catalog-nav_btn" type="button">сырные</button>
+                    </li>
+                  </ul>
+                </nav >
+              </header>
+<!--1111111111111111111111111111111111111111111111111111111111111111111111111111111-->
+        <div class="catalog">
+            <div class="catalog__item">
+              <div class="product catalog__product">
+                <img src="img/section-catalog/1.png" alt="" class="product__img">
+                <div class="product__content">
+                  <h3 class="product__title">Пепперони</h3>
+                  <p class="product__description">Сыр моцарелла, Томатный соус Domino's, Пепперони </p>
+                </div>
+                <footer class="product__footer">
+                  <div class="product__sizes">
+                    <button class="product__size is-active" type="button">35см</button>
+                    <button class="product__size" type="button">30см</button>
+                    <button class="product__size" type="button">25см</button>
+                  </div>
+                  <div class="product__bottom">
+                    <div class="product__price">
+                      <span class="product__price-value">23</span>
+                      <span class="product__currency">BYN</span>
+                    </div>
+                    <button class="btn product__btn" type="button">заказать</button>
+                  </div>
+                </footer>
+              </div>
+            </div>
+<!--22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222-->
+            <div class="catalog__item">
+              <div class="product catalog__product">
+                <img src="img/section-catalog/2.png" alt="" class="product__img">
+                <div class="product__content">
+                  <h3 class="product__title">Карбонара</h3>
+                  <p class="product__description">Шампиньоны, Лук, Крем фреш, Бекон, Сыр моцарелла, Ветчина </p>
+                </div>
+                <footer class="product__footer">
+                  <div class="product__sizes">
+                    <button class="product__size is-active" type="button">35см</button>
+                    <button class="product__size" type="button">30см</button>
+                    <button class="product__size" type="button">25см</button>
+                  </div>
+                  <div class="product__bottom">
+                    <div class="product__price">
+                      <span class="product__price-value">21</span>
+                      <span class="product__currency">BYN</span>
+                    </div>
+                    <button class="btn product__btn" type="button">заказать</button>
+                  </div>
+                </footer>
+              </div>
+            </div>
+<!--33333333333333333333333333333333333333333333333333333333333333333333333333333333333333333-->
+            <div class="catalog__item">
+              <div class="product catalog__product">
+                <img src="img/section-catalog/3.png" alt="" class="product__img">
+                <div class="product__content">
+                  <h3 class="product__title">5 Сыров</h3>
+                  <p class="product__description">Фета, Крем фреш, Голубой сыр, Пармезан, Чеддер, Сыр моцарелла</p>
+                </div>
+                <footer class="product__footer">
+                  <div class="product__sizes">
+                    <button class="product__size is-active" type="button">35см</button>
+                    <button class="product__size" type="button">30см</button>
+                    <button class="product__size" type="button">25см</button>
+                  </div>
+                  <div class="product__bottom">
+                    <div class="product__price">
+                      <span class="product__price-value">15</span>
+                      <span class="product__currency">BYN</span>
+                    </div>
+                    <button class="btn product__btn" type="button">заказать</button>
+                  </div>
+                </footer>
+              </div>
+            </div>
+<!--44444444444444444444444444444444444444444444444444444444444444444444444444444444444444444-->
+            <div class="catalog__item">
+                <div class="product catalog__product">
+                  <img src="img/section-catalog/4.png" alt="" class="product__img">
+                  <div class="product__content">
+                    <h3 class="product__title">Прованс</h3>
+                    <p class="product__description">Томаты, Голубой сыр, Сыр моцарелла, Крем фреш, Пепперони, Ветчина</p>
+                  </div>
+                  <footer class="product__footer">
+                    <div class="product__sizes">
+                      <button class="product__size is-active" type="button">35см</button>
+                      <button class="product__size" type="button">30см</button>
+                      <button class="product__size" type="button">25см</button>
+                    </div>
+                    <div class="product__bottom">
+                      <div class="product__price">
+                        <span class="product__price-value">21</span>
+                        <span class="product__currency">BYN</span>
+                      </div>
+                      <button class="btn product__btn" type="button">заказать</button>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+<!--55555555555555555555555555555555555555555555555555555555555555555555555555555555555555555-->
+              <div class="catalog__item">
+                <div class="product catalog__product">
+                  <img src="img/section-catalog/5.png" alt="" class="product__img">
+                  <div class="product__content">
+                    <h3 class="product__title">Маргарита</h3>
+                    <p class="product__description">Сыр моцарелла, Томатный соус</p>
+                  </div>
+                  <footer class="product__footer">
+                    <div class="product__sizes">
+                      <button class="product__size is-active" type="button">35см</button>
+                      <button class="product__size" type="button">30см</button>
+                      <button class="product__size" type="button">25см</button>
+                    </div>
+                    <div class="product__bottom">
+                      <div class="product__price">
+                        <span class="product__price-value">12</span>
+                        <span class="product__currency">BYN</span>
+                      </div>
+                      <button class="btn product__btn" type="button">заказать</button>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+<!--66666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666-->
+              <div class="catalog__item">
+                <div class="product catalog__product">
+                  <img src="img/section-catalog/6.png" alt="" class="product__img">
+                  <div class="product__content">
+                    <h3 class="product__title">Ветчина-грибы</h3>
+                    <p class="product__description">Шампиньоны, Ветчина, Сыр моцарелла, Томатный соус</p>
+                  </div>
+                  <footer class="product__footer">
+                    <div class="product__sizes">
+                      <button class="product__size is-active" type="button">35см</button>
+                      <button class="product__size" type="button">30см</button>
+                      <button class="product__size" type="button">25см</button>
+                    </div>
+                    <div class="product__bottom">
+                      <div class="product__price">
+                        <span class="product__price-value">15</span>
+                        <span class="product__currency">BYN</span>
+                      </div>
+                      <button class="btn product__btn" type="button">заказать</button>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+<!--777777777777777777777777777777777777777777777777777777777777777777777777777777777777777-->
+              <div class="catalog__item">
+                <div class="product catalog__product">
+                  <img src="img/section-catalog/7.png" alt="" class="product__img">
+                  <div class="product__content">
+                    <h3 class="product__title">Лесная</h3>
+                    <p class="product__description">Сыр моцарелла, Опята, Соус Ранч, Пармезан</p>
+                  </div>
+                  <footer class="product__footer">
+                    <div class="product__sizes">
+                      <button class="product__size is-active" type="button">35см</button>
+                      <button class="product__size" type="button">30см</button>
+                      <button class="product__size" type="button">25см</button>
+                    </div>
+                    <div class="product__bottom">
+                      <div class="product__price">
+                        <span class="product__price-value">15</span>
+                        <span class="product__currency">BYN</span>
+                      </div>
+                      <button class="btn product__btn" type="button">заказать</button>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+    <!--88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888-->
+              <div class="catalog__item">
+                <div class="product catalog__product">
+                  <img src="img/section-catalog/8.png" alt="" class="product__img">
+                  <div class="product__content">
+                    <h3 class="product__title">Кантри</h3>
+                    <p class="product__description">Соус Ранч, Лук, Ветчина, Сыр моцарелла, Огурцы, Шампиньоны, Бекон </p>
+                  </div>
+                  <footer class="product__footer">
+                    <div class="product__sizes">
+                      <button class="product__size is-active" type="button">35см</button>
+                      <button class="product__size" type="button">30см</button>
+                      <button class="product__size" type="button">25см</button>
+                    </div>
+                    <div class="product__bottom">
+                      <div class="product__price">
+                        <span class="product__price-value">21</span>
+                        <span class="product__currency">BYN</span>
+                      </div>
+                      <button class="btn product__btn" type="button">заказать</button>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+<!--9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999-->
+              <div class="catalog__item">
+                <div class="product catalog__product">
+                  <img src="img/section-catalog/9.png" alt="" class="product__img">
+                  <div class="product__content">
+                    <h3 class="product__title">Креветки с ананасами</h3>
+                    <p class="product__description">Соус Ранч, Шампиньоны, Ананас, Креветки x 2, Сыр моцарелла </p>
+                  </div>
+                  <footer class="product__footer">
+                    <div class="product__sizes">
+                      <button class="product__size is-active" type="button">35см</button>
+                      <button class="product__size" type="button">30см</button>
+                      <button class="product__size" type="button">25см</button>
+                    </div>
+                    <div class="product__bottom">
+                      <div class="product__price">
+                        <span class="product__price-value">25</span>
+                        <span class="product__currency">BYN</span>
+                      </div>
+                      <button class="btn product__btn" type="button">заказать</button>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+              <!--10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 10 -->
+              <div class="catalog__item">
+                <div class="product catalog__product">
+                  <img src="img/section-catalog/10.png" alt="" class="product__img">
+                  <div class="product__content">
+                    <h3 class="product__title">Чикен Ранч</h3>
+                    <p class="product__description">Соус Ранч, Томаты, Сыр моцарелла, Курица </p>
+                  </div>
+                  <footer class="product__footer">
+                    <div class="product__sizes">
+                      <button class="product__size is-active" type="button">35см</button>
+                      <button class="product__size" type="button">30см</button>
+                      <button class="product__size" type="button">25см</button>
+                    </div>
+                    <div class="product__bottom">
+                      <div class="product__price">
+                        <span class="product__price-value">25</span>
+                        <span class="product__currency">BYN</span>
+                      </div>
+                      <button class="btn product__btn" type="button">заказать</button>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+<!--11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 -->
+              <div class="catalog__item">
+                <div class="product catalog__product">
+                  <img src="img/section-catalog/11.png" alt="" class="product__img">
+                  <div class="product__content">
+                    <h3 class="product__title">Холопушка</h3>
+                    <p class="product__description">Пепперони, Халапеньо, Сыр моцарелла, Томатный соус Domino's, Бекон, Томаты</p>
+                  </div>
+                  <footer class="product__footer">
+                    <div class="product__sizes">
+                      <button class="product__size is-active" type="button">35см</button>
+                      <button class="product__size" type="button">30см</button>
+                      <button class="product__size" type="button">25см</button>
+                    </div>
+                    <div class="product__bottom">
+                      <div class="product__price">
+                        <span class="product__price-value">21</span>
+                        <span class="product__currency">BYN</span>
+                      </div>
+                      <button class="btn product__btn" type="button">заказать</button>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+<!--12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12 12-->
+              <div class="catalog__item">
+                <div class="product catalog__product">
+                  <img src="img/section-catalog/12.png" alt="" class="product__img">
+                  <div class="product__content">
+                    <h3 class="product__title">Гавайская</h3>
+                    <p class="product__description">Сыр моцарелла, Курица, Томатный соус Domino's, Ананас, Ветчина </p>
+                  </div>
+                  <footer class="product__footer">
+                    <div class="product__sizes">
+                      <button class="product__size is-active" type="button">35см</button>
+                      <button class="product__size" type="button">30см</button>
+                      <button class="product__size" type="button">25см</button>
+                    </div>
+                    <div class="product__bottom">
+                      <div class="product__price">
+                        <span class="product__price-value">15</span>
+                        <span class="product__currency">BYN</span>
+                      </div>
+                      <button class="btn product__btn" type="button">заказать</button>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+              <!--13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 13 -->
+              <div class="catalog__item">
+                <div class="product catalog__product">
+                  <img src="img/section-catalog/13.png" alt="" class="product__img">
+                  <div class="product__content">
+                    <h3 class="product__title">Баварская</h3>
+                    <p class="product__description">Баварские колбаски, Сыр моцарелла, Пармезан, Халапеньо, Соус барбекю</p>
+                  </div>
+                  <footer class="product__footer">
+                    <div class="product__sizes">
+                      <button class="product__size is-active" type="button">35см</button>
+                      <button class="product__size" type="button">30см</button>
+                      <button class="product__size" type="button">25см</button>
+                    </div>
+                    <div class="product__bottom">
+                      <div class="product__price">
+                        <span class="product__price-value">25</span>
+                        <span class="product__currency">BYN</span>
+                      </div>
+                      <button class="btn product__btn" type="button">заказать</button>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+        <!--14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14 14-->
+
+              <div class="catalog__item">
+                <div class="product catalog__product">
+                  <img src="img/section-catalog/14.png" alt="" class="product__img">
+                  <div class="product__content">
+                    <h3 class="product__title">Ривьера</h3>
+                    <p class="product__description">Соус Ранч, Шпинат, Сыр моцарелла, Черри, Ветчина, Маслины </p>
+                  </div>
+                  <footer class="product__footer">
+                    <div class="product__sizes">
+                      <button class="product__size is-active" type="button">35см</button>
+                      <button class="product__size" type="button">30см</button>
+                      <button class="product__size" type="button">25см</button>
+                    </div>
+                    <div class="product__bottom">
+                      <div class="product__price">
+                        <span class="product__price-value">21</span>
+                        <span class="product__currency">BYN</span>
+                      </div>
+                      <button class="btn product__btn" type="button">заказать</button>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+              <!--15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 15 1-->
+              <div class="catalog__item">
+                <div class="product catalog__product">
+                  <img src="img/section-catalog/15.png" alt="" class="product__img">
+                  <div class="product__content">
+                    <h3 class="product__title">Грибная с голубым сыром</h3>
+                    <p class="product__description">Голубой сыр, Сыр моцарелла, Опята, Соус Ранч, Шампиньоны</p>
+                  </div>
+                  <footer class="product__footer">
+                    <div class="product__sizes">
+                      <button class="product__size is-active" type="button">35см</button>
+                      <button class="product__size" type="button">30см</button>
+                      <button class="product__size" type="button">25см</button>
+                    </div>
+                    <div class="product__bottom">
+                      <div class="product__price">
+                        <span class="product__price-value">23</span>
+                        <span class="product__currency">BYN</span>
+                      </div>
+                      <button class="btn product__btn" type="button">заказать</button>
+                    </div>
+                  </footer>
+                </div>
+      </section>
+       <!-- footer-page -->
+<footer class="footer-page">
+    <div class="container">
+        
+      <div class="footer-page__text">Oh là là 2021</div>
+    </div>
+  </footer>
+  <!-- /.footer-page -->
+ 
+
+</body>
+</html>
